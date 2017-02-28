@@ -1,0 +1,7 @@
+
+
+ response = HTTParty.post("https://#{ENV['TWILIO_SID']}:#{ENV['TWILIO_TOKEN']}@api.twilio.com/2010-04-01/Accounts/#{ENV['TWILIO_SID']}/Messages.json",
+ :body => {:Body => body,
+           :To => to,
+           :From => from
+         })

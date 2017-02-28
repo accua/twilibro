@@ -1,0 +1,10 @@
+<h1>Bro a friend.</h1>
+
+<%= render 'form', message: @message %>
+
+<h1>Bros.</h1>
+<% @contacts.each do |contact| %>
+  <ul>
+    <li><%= contact.name %> - <%= contact.number %></li>
+  </ul>
+<% end %>
